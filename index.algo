@@ -1,0 +1,24 @@
+ALGORITHM chaine
+VAR
+    sentence = ""
+    longeur = 0
+    word = 0
+    vowel = 0
+BEGIN
+    write("donate one sentence");
+    read(sentence);
+    FOR i FROM 0 TO sentence.length-1 STEP 1 DO
+        longeur = longeur + 1 
+    END_FOR
+     word = 1 
+     FOR i FROM 0 TO  sentence.length-1 STEP 1  DO
+        if (sentence [i] =" " or sentence[i]=".") then
+        word = word + 1 
+     END_FOR
+     FOR i FROM 0 TO sentence.length-1 STEP 1  DO
+        if ( sentence[i] in ("a","i","u","y","o","e") ) then
+        vowel =  vowel + 1 
+     END_FOR
+write("number of word is",word) ;
+write("number of vowel",vowel) ;
+END
